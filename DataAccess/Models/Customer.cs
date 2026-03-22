@@ -5,13 +5,14 @@ namespace DataAccess.Models;
 
 public partial class Customer
 {
+
     public int CustomerId { get; set; }
 
     public string? CustomerFullName { get; set; }
 
     public string? Telephone { get; set; }
 
-    public string? EmailAddress { get; set; }
+    public string EmailAddress { get; set; } = null!;
 
     public DateTime? CustomerBirthday { get; set; }
 
@@ -19,16 +20,25 @@ public partial class Customer
 
     public string? Password { get; set; }
 
+    public int? RoleId { get; set; }
+
     public virtual ICollection<BookingReservation> BookingReservations { get; set; } = new List<BookingReservation>();
 
+    public virtual Role? Role { get; set; }
 
-    public Customer(string EmailAddress, string Password)
+    public Customer(string? customerFullName, string? telephone, string emailAddress, DateTime? customerBirthday, byte? customerStatus, string? password, int? roleId)
     {
-        this.EmailAddress = EmailAddress;
-        this.Password = Password;
+        CustomerFullName = customerFullName;
+        Telephone = telephone;
+        EmailAddress = emailAddress;
+        CustomerBirthday = customerBirthday;
+        CustomerStatus = customerStatus;
+        Password = password;
+        RoleId = roleId;
     }
 
     public Customer()
     {
     }
 }
+

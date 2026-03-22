@@ -8,6 +8,7 @@ D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAc
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.dll
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.pdb

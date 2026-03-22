@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace DataAccess;
+namespace DataAccess.Models;
 
 public partial class FuminiHotelManagementContext : DbContext
 {
@@ -17,11 +16,15 @@ public partial class FuminiHotelManagementContext : DbContext
     {
     }
 
+    public virtual DbSet<Admin> Admins { get; set; }
+
     public virtual DbSet<BookingDetail> BookingDetails { get; set; }
 
     public virtual DbSet<BookingReservation> BookingReservations { get; set; }
 
     public virtual DbSet<Customer> Customers { get; set; }
+
+    public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<RoomInformation> RoomInformations { get; set; }
 
@@ -41,6 +44,25 @@ public partial class FuminiHotelManagementContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Admin>(entity =>
+        {
+            entity.HasKey(e => e.AdminId).HasName("PK__Admin__719FE4E866FE251B");
+
+            entity.ToTable("Admin");
+
+            entity.HasIndex(e => e.Email, "UQ__Admin__A9D105341B8DAE27").IsUnique();
+
+            entity.Property(e => e.AdminId).HasColumnName("AdminID");
+            entity.Property(e => e.Email).HasMaxLength(100);
+            entity.Property(e => e.Password).HasMaxLength(100);
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.Admins)
+                .HasForeignKey(d => d.RoleId)
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_Admin_Role");
+        });
+
         modelBuilder.Entity<BookingDetail>(entity =>
         {
             entity.HasKey(e => new { e.BookingReservationId, e.RoomId });
@@ -85,7 +107,21 @@ public partial class FuminiHotelManagementContext : DbContext
             entity.Property(e => e.CustomerFullName).HasMaxLength(50);
             entity.Property(e => e.EmailAddress).HasMaxLength(50);
             entity.Property(e => e.Password).HasMaxLength(50);
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.Telephone).HasMaxLength(12);
+
+            entity.HasOne(d => d.Role).WithMany(p => p.Customers)
+                .HasForeignKey(d => d.RoleId)
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_Customer_Role");
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.ToTable("Role");
+
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+            entity.Property(e => e.RoleName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<RoomInformation>(entity =>

@@ -9,6 +9,7 @@ D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Reposi
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.sourcelink.json
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\Repository.dll
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\Repository\obj\Debug\net8.0\refint\Repository.dll

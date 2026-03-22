@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess;
 using DataAccess.Models;
 using Repository.DTO;
 using Repository.Helper;
+using DataAccess;
+
 
 namespace Repository.User
 {
@@ -32,6 +33,8 @@ namespace Repository.User
             }
         }
 
+
+
         public bool AddCustomer(Customer customer)
         {
             var p = context.Customers.FirstOrDefault(x => x.EmailAddress.Equals(customer.EmailAddress));
@@ -46,5 +49,21 @@ namespace Repository.User
                 return true;
             }
         }
+
+
+
+        public AdminDTO LoginWithAdmin(string email, string password)
+        {
+
+            var p = context.Admins.FirstOrDefault(x => x.Email == email && x.Password == password);
+            if (p != null)
+            {
+                return TransferModelsDTO.MappAdmin(p);
+            }
+            else
+            {
+                return null;
+            }
+        }     
     }
 }

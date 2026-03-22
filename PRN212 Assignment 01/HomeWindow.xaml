@@ -10,30 +10,20 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- HEADER -->
         <Border Grid.Row="0" Background="#1976D2">
-            <DockPanel Margin="20,0">
-                <TextBlock x:Name="txtWelcome"
-                           Text="Welcome"
-                           Foreground="White"
-                           FontSize="18"
-                           FontWeight="SemiBold"
-                           VerticalAlignment="Center"
-                           DockPanel.Dock="Left"/>
-                <Button Content="Logout"
-                        Width="100"
-                        Height="32"
-                        Background="White"
-                        Foreground="#1976D2"
-                        FontWeight="Bold"
-                        Margin="0,0,10,0"
-                        DockPanel.Dock="Right"
-                        Click="Button_Click"
-                        Cursor="Hand"/>
-            </DockPanel>
+            <Grid Margin="20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="txtWelcome" Text="Welcome" Foreground="White" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center" Grid.Column="0"/>
+                <TextBlock Text="Hotel Management System" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"/>
+                <Button Content="Logout" Width="100" Height="32" Background="White" Foreground="#1976D2" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="2" Click="Button_Click" Cursor="Hand"/>
+            </Grid>
         </Border>
 
-        <!-- BODY -->
         <TabControl Grid.Row="1" Margin="10">
             <!-- HOTEL MANAGEMENT TAB -->
             <TabItem Header="Hotel Management">
@@ -42,25 +32,17 @@
                         <ColumnDefinition Width="350"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
 
-                    <!-- FORM -->
                     <StackPanel Grid.Column="0" Margin="0,0,20,0">
                         <TextBlock Text="Hotel Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
-
-                        <!-- Search -->
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                             <TextBox x:Name="txtSearchHotelId" Width="100" Margin="0,0,10,0"/>
-                            <TextBox x:Name="txtSearchHotelName" Width="150" Margin="0,0,10,0" />
+                            <TextBox x:Name="txtSearchHotelName" Width="150" Margin="0,0,10,0"/>
                             <Button Content="Search" Width="80" Background="#1976D2" Foreground="White"/>
                         </StackPanel>
 
                         <TextBlock Text="Hotel ID" Visibility="Collapsed"/>
                         <TextBox x:Name="txtHotelId" Visibility="Collapsed" Margin="0,4"/>
-
-
 
                         <TextBlock Text="Hotel Name"/>
                         <TextBox x:Name="txtHotelName" Margin="0,4"/>
@@ -71,16 +53,14 @@
                         <TextBlock Text="Hotel Rating (1-5)"/>
                         <TextBox x:Name="txtHotelRating" Margin="0,4"/>
 
-                        <!-- Buttons -->
-                        <WrapPanel Margin="0,10">
-                            <Button Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White"/>
-                            <Button Content="Update" Width="75" Margin="5" Background="#FFC107"/>
-                            <Button Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White"/>
+                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340">
+                            <Button x:Name="btnAddHotel" Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White"/>
+                            <Button x:Name="btnUpdateHotel" Content="Update" Width="75" Margin="5" Background="#FFC107"/>
+                            <Button x:Name="btnDeleteHotel" Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White"/>
                             <Button Content="Clear" Width="75" Margin="5"/>
                         </WrapPanel>
                     </StackPanel>
 
-                    <!-- DataGrid -->
                     <DataGrid x:Name="dgHotels" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
@@ -93,26 +73,22 @@
             </TabItem>
 
             <!-- CUSTOMER MANAGEMENT TAB -->
-            <TabItem Header="Customer Management" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+            <TabItem Header="Customer Management">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="350"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <!-- FORM -->
                     <StackPanel Grid.Column="0" Margin="0,0,20,0">
                         <TextBlock Text="Customer Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <TextBox x:Name="txtSearchCustomerId" Width="100" Margin="0,0,10,0"/>
+                            <TextBox x:Name="txtSearchCustomerName" Width="134" Margin="0,0,10,0" Height="18"/>
+                            <Button Content="Search" Width="71" Background="#1976D2" Foreground="White" Click="Button_Click_2"/>
+                        </StackPanel>
 
-                        <!-- Search -->
-                       <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-    <TextBox x:Name="txtSearchCustomerId" Width="100" Margin="0,0,10,0" />
-    <TextBox x:Name="txtSearchCustomerName" Width="150" Margin="0,0,10,0" />
-    <Button Content="Search" Width="80" Background="#1976D2" Foreground="White" Click="Button_Click_2"/>
-</StackPanel>
-
-
-                        <TextBlock Text="Customer ID" Visibility="Collapsed" />
+                        <TextBlock Text="Customer ID" Visibility="Collapsed"/>
                         <TextBox x:Name="txtCustomerId" Margin="0,4" Visibility="Collapsed"/>
 
                         <TextBlock Text="Customer Name"/>
@@ -130,16 +106,14 @@
                         <TextBlock Text="Status"/>
                         <TextBox x:Name="txtCustomerstatus" Margin="0,4"/>
 
-                        <!-- Buttons -->
-                        <WrapPanel Margin="0,10">
+                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340">
                             <Button Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White" Click="btnAdd_Click"/>
                             <Button Content="Update" Width="75" Margin="5" Background="#FFC107" Click="btnUpdate_Click"/>
-                            <Button Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White" Click="btnDelete_Click" />
-                            <Button Content="Clear" Width="75" Margin="5" Click="btnClear_Click"/>
+                            <Button Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White" Click="btnDelete_Click"/>
+                            <Button Content="Clear" Width="75" Margin="5" Background="#9E9E9E" Foreground="White" Click="btnClear_Click"/>
                         </WrapPanel>
                     </StackPanel>
 
-                    <!-- DataGrid -->
                     <DataGrid x:Name="dgCustomers" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgCustomers_SelectionChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding CustomerId}" Width="*"/>
@@ -148,6 +122,83 @@
                             <DataGridTextColumn Header="Phone" Binding="{Binding Telephone}" Width="*"/>
                             <DataGridTextColumn Header="Birthday" Binding="{Binding CustomerBirthday}" Width="*"/>
                             <DataGridTextColumn Header="Status" Binding="{Binding CustomerStatus}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- ROOM TYPE MANAGEMENT TAB -->
+            <TabItem Header="Room Type Management">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="350"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="0,0,20,0">
+                        <TextBlock Text="Room Type Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <TextBox x:Name="txtSearchRoomTypeId" Width="100" Margin="0,0,10,0"/>
+                            <TextBox x:Name="txtSearchRoomTypeName" Width="150" Margin="0,0,10,0"/>
+                            <Button Content="Search" Width="80" Background="#1976D2" Foreground="White" Click="Button_SearchRoom"/>
+                        </StackPanel>
+
+                        <TextBlock Text="Room Type ID" Visibility="Collapsed"/>
+                        <TextBox x:Name="txtRoomTypeId" Margin="0,4" Visibility="Collapsed"/>
+
+                        <TextBlock Text="Room Type Name"/>
+                        <TextBox x:Name="txtRoomTypeName" Margin="0,4"/>
+
+                        <TextBlock Text="Description"/>
+                        <TextBox x:Name="txtRoomTypeDescription" Margin="0,4"/>
+
+                        <TextBlock Text="Note"/>
+                        <TextBox x:Name="txtRoomTypeNote" Margin="0,4"/>
+
+                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340">
+                            <Button x:Name="btnAdd" Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White" Click="Button_AddRoom"/>
+                            <Button x:Name="btnUpdate" Content="Update" Width="75" Margin="5" Background="#FFC107" Click="Button_UpdateRoom"/>
+                            <Button x:Name="btnDelete" Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White" Click="Button_DeleteRoom"/>
+                            <Button Content="Clear" Width="75" Margin="5" Background="#9E9E9E" Foreground="White" Click="Button_ClearRoom"/>
+                        </WrapPanel>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dgRoomTypes" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgRoomTypes_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding RoomTypeId}" Width="*"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding RoomTypeName}" Width="*"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding TypeDescription}" Width="*"/>
+                            <DataGridTextColumn Header="Note" Binding="{Binding TypeNote}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- BOOKING REPORT TAB -->
+            <TabItem Header="Booking Report">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBlock Text="Start Date:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <DatePicker x:Name="dpStartDate" Width="150" Margin="0,0,10,0"/>
+                        <TextBlock Text="End Date:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <DatePicker x:Name="dpEndDate" Width="150" Margin="0,0,10,0"/>
+                        <Button Content="Generate" Width="100" Background="#1976D2" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dgBookingReport" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingReservationId}" Width="*"/>
+                            <DataGridTextColumn Header="Room ID" Binding="{Binding RoomId}" Width="*"/>
+                            <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" Width="*"/>
+                            <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="*"/>
+                            <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" Width="*"/>
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate}" Width="*"/>
+                            <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>

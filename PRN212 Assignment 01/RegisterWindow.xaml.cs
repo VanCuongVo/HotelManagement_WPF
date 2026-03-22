@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using DataAccess.Models;
 using Service.UserService;
 
 namespace PRN212_Assignment_01
@@ -26,26 +25,41 @@ namespace PRN212_Assignment_01
             InitializeComponent();
         }
 
-        private void LnkLogin(object sender, RoutedEventArgs e)
+        private void LnkLogin_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow login = new LoginWindow();
             login.Show();     
             this.Hide();      
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Register_Click(object sender, RoutedEventArgs e)
         {
-            var Email = EmailTextBox.Text;
-            var password = PasswordBox.Password;
-            var CPassword = ConfirmPasswordBox.Password;
+            var FullName = txtFullName.Text;
+            var Telepphone = txtTelephone.Text;
+            var Email = txtEmail.Text;
+            var password = pbPassword.Password;
+            var CPassword = pbConfirmPassword.Password;
+            var selectedItem = cbStatus.SelectedItem as ComboBoxItem;
+            byte status = selectedItem != null ? byte.Parse(selectedItem.Tag.ToString()) : (byte)0;
+            DateTime? birthDate = dpBirthday.SelectedDate;
             if (!password.Equals(CPassword))
             {
-                MessageBox.Show("Password not match", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Password do not match", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
                 AccountService accountService = new AccountService();
-                bool result = accountService.AddCustomer(new DataAccess.Models.Customer(Email, password));
+                var customer = new DataAccess.Models.Customer
+                {
+                    CustomerFullName = FullName,
+                    Telephone = Telepphone,
+                    EmailAddress = Email,
+                    Password = password,
+                    CustomerBirthday = birthDate,
+                    CustomerStatus = status,
+                    RoleId = 1 
+                };
+                bool result = accountService.AddCustomer(customer);
 
                 if (result)
                 {
@@ -56,7 +70,7 @@ namespace PRN212_Assignment_01
                 }
                 else
                 {
-                    MessageBox.Show("Register failed! Username may already exist.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Register failed! Please Fill out Information", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
 

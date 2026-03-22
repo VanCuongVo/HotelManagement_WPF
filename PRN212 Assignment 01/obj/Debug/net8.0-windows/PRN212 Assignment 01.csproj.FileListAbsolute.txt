@@ -1,3 +1,11 @@
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.csproj.AssemblyReference.cache
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\RegisterWindow.baml
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\LoginWindow.g.cs
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\RegisterWindow.g.cs
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\App.g.cs
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01_MarkupCompile.cache
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01_MarkupCompile.lref
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\PRN212 Assignment 01.exe
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\appsettings.json
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\PRN212 Assignment 01.deps.json
@@ -62,26 +70,87 @@ D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Service.pdb
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\DataAccess.pdb
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Repository.pdb
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.csproj.AssemblyReference.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\HomeWindow.baml
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\HomeWindow.g.cs
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\LoginWindow.g.cs
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\RegisterWindow.g.cs
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\App.g.cs
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01_MarkupCompile.cache
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01_MarkupCompile.lref
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\LoginWindow.baml
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\MainWindow.baml
-D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\RegisterWindow.baml
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.g.resources
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.GeneratedMSBuildEditorConfig.editorconfig
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.AssemblyInfoInputs.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.AssemblyInfo.cs
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.csproj.CoreCompileInputs.cache
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.sourcelink.json
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 A.4A89B323.Up2Date
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.dll
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\refint\PRN212 Assignment 01.dll
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.pdb
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\PRN212 Assignment 01.genruntimeconfig.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\ref\PRN212 Assignment 01.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\CustomerHomeWindow.g.cs
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\obj\Debug\net8.0-windows\CustomerHomeWindow.baml
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Humanizer.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\PRN212 Assignment 01\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll

@@ -44,7 +44,6 @@ namespace Repository.User
                 p.CustomerStatus = customer.CustomerStatus;
                 p.CustomerBirthday = customer.CustomerBirthday;
                 context.SaveChanges();
-
         }
 
 
@@ -63,7 +62,6 @@ namespace Repository.User
 
         public CustomerDTO SearchCustomerID(int id)
         {
-            CustomerDTO cus = new();
             var p = context.Customers.FirstOrDefault(x => x.CustomerId == id);
             return TransferModelsDTO.MappCustomerDTO(p);
         }
@@ -79,8 +77,6 @@ namespace Repository.User
                 }
             }
             return cus;
-
         }
-
     }
 }

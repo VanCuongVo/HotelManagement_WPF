@@ -6,13 +6,11 @@
         xmlns:local="clr-namespace:PRN212_Assignment_01"
         mc:Ignorable="d"
         Title="LoginWindow" Height="450" Width="800">
-
     <Grid>
         <Border Margin="20"
                 Background="White"
                 CornerRadius="10"
                 Padding="20">
-
             <StackPanel>
                 <!-- Title -->
                 <TextBlock Text="Login"
@@ -21,7 +19,7 @@
                            HorizontalAlignment="Center"
                            Margin="0,0,0,20"/>
 
-                <!-- Username -->
+                <!-- Email -->
                 <TextBlock Text="Email" FontWeight="SemiBold" Margin="5,0,0,5"/>
                 <TextBox x:Name="txtemail"
                          Height="40"
@@ -41,38 +39,39 @@
                              BorderBrush="#CCC"
                              BorderThickness="1"/>
 
-                <!-- Login Button -->
-                <Button Content="Login"
-                        Height="40"
-                        FontSize="16"
-                        FontWeight="Bold"
-                        Background="#0078D7"
-                        Foreground="White"
-                        Cursor="Hand"
-                        BorderThickness="0"
-                        Margin="0,0,0,10" Click="Button_Click"
-                       >
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#0078D7"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="BorderBrush" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#005A9E"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                </Button>
+                <!-- Two Login Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button Content="Login Customer"
+                            Width="150"
+                            Height="40"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Background="#4CAF50"
+                            Foreground="White"
+                            Margin="5"
+                            Cursor="Hand"
+                            Click="LoginCustomer_Click"/>
+
+                    <Button Content="Login Manager"
+                            Width="150"
+                            Height="40"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Background="#2196F3"
+                            Foreground="White"
+                            Margin="5"
+                            Cursor="Hand"
+                            Click="LoginManager_Click"/>
+                </StackPanel>
+
                 <!-- Switch to register -->
-                <TextBlock HorizontalAlignment="Center" FontSize="13">
+                <TextBlock HorizontalAlignment="Center" FontSize="13" Margin="0,20,0,0">
                     <Run Text="Don't have an account? "/>
-                    <Hyperlink x:Name="lnkLoginregister" Click="LnkLoginregister" >
+                    <Hyperlink x:Name="lnkLoginregister" Click="LnkLoginregister">
                         Register here
                     </Hyperlink>
                 </TextBlock>
             </StackPanel>
         </Border>
     </Grid>
-</Window>
+</Window> 

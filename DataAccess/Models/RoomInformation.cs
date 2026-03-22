@@ -17,7 +17,7 @@ public partial class RoomInformation
 
     public byte? RoomStatus { get; set; }
 
-    public decimal? RoomPricePerDay { get; set; }
+    public double? RoomPricePerDay { get; set; }
 
     public virtual ICollection<BookingDetail> BookingDetails { get; set; } = new List<BookingDetail>();
 

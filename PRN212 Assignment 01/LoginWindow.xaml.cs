@@ -27,7 +27,7 @@ namespace PRN212_Assignment_01
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LoginCustomer_Click(object sender, RoutedEventArgs e)
         {
             accountService = new();
             string email = txtemail.Text;
@@ -39,9 +39,9 @@ namespace PRN212_Assignment_01
             }
             else
             {
-                HomeWindow home = new HomeWindow(p.Value);
+                CustomerHomeWindow cusrtomerhome = new CustomerHomeWindow(p.Value);
                 this.Hide();
-                home.Show();
+                cusrtomerhome.Show();
             }
 
         }
@@ -54,6 +54,25 @@ namespace PRN212_Assignment_01
 
         }
 
+
+        private void LoginManager_Click(object sender, RoutedEventArgs e)
+        {
+            accountService = new();
+            string email = txtemail.Text;
+            string password = txtPassword.Password;
+            var p = accountService.LoginWithAdmin(email, password);
+            if (p.Isuccess == false)
+            {
+                MessageBox.Show("Login in errors", "Please try login try again", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                HomeWindow home = new HomeWindow(p.Value);
+                this.Hide();
+                home.Show();
+            }
+
+        }
 
 
 

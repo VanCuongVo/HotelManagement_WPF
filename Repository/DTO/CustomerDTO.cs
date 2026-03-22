@@ -14,7 +14,7 @@ namespace Repository.DTO
 
         public string? Telephone { get; set; }
 
-        public string? EmailAddress { get; set; }
+        public string EmailAddress { get; set; } = null!;
 
         public DateTime? CustomerBirthday { get; set; }
 
@@ -22,8 +22,11 @@ namespace Repository.DTO
 
         public string? Password { get; set; }
 
+        public int? RoleId { get; set; }
         public CustomerDTO()
         {
         }
+
+
     }
 }

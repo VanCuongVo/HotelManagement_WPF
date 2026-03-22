@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vovan\\Downloads\\PRN212 Assignment 01\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj": {}
+    "D:\\Summer2025\\PRN212\\ASM\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vovan\\Downloads\\PRN212 Assignment 01\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj": {
+    "D:\\Summer2025\\PRN212\\ASM\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vovan\\Downloads\\PRN212 Assignment 01\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Summer2025\\PRN212\\ASM\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\vovan\\Downloads\\PRN212 Assignment 01\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\Summer2025\\PRN212\\ASM\\PRN212 Assignment 01\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\vovan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vovan\\Downloads\\PRN212 Assignment 01\\PRN212 Assignment 01\\DataAccess\\obj\\",
+        "outputPath": "D:\\Summer2025\\PRN212\\ASM\\PRN212 Assignment 01\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

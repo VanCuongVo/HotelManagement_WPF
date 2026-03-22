@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ using Repository.DTO;
 
 namespace Repository.Helper
 {
-    public  class TransferModelsDTO
+    public class TransferModelsDTO
     {
         public static CustomerDTO MappCustomerDTO(Customer cus)
         {
@@ -28,10 +29,10 @@ namespace Repository.Helper
             Customer customer = new Customer();
             customer.CustomerId = customerDTO.CustomerId;
             customer.CustomerFullName = customerDTO.CustomerFullName;
-            customer.CustomerBirthday= customerDTO.CustomerBirthday; 
+            customer.CustomerBirthday = customerDTO.CustomerBirthday;
             customer.EmailAddress = customerDTO.EmailAddress;
             customer.Telephone = customerDTO.Telephone;
-            customer.CustomerStatus = customerDTO.CustomerStatus; 
+            customer.CustomerStatus = customerDTO.CustomerStatus;
             customer.Password = customerDTO.Password;
             return customer;
 
@@ -47,17 +48,31 @@ namespace Repository.Helper
         }
 
 
-        public static RoomInformationDTO MappRoom(RoomInformation roomInformation)
+        public static RoomInformation MapRoom(RoomInformationDTO dto)
         {
-            RoomInformationDTO roomInformationDTO = new RoomInformationDTO();
-            roomInformationDTO.RoomId = roomInformation.RoomId;
-            roomInformationDTO.RoomNumber = roomInformation.RoomNumber;
-            roomInformationDTO.RoomDetailDescription = roomInformation.RoomDetailDescription;
-            roomInformationDTO.RoomPricePerDay = roomInformation.RoomPricePerDay;
-            roomInformationDTO.RoomTypeId = roomInformation.RoomTypeId;
-            roomInformationDTO.RoomMaxCapacity = roomInformation.RoomMaxCapacity;
-            roomInformationDTO.RoomStatus = roomInformation.RoomStatus;
-            return roomInformationDTO;
+            return new RoomInformation
+            {
+                RoomId = dto.RoomId,
+                RoomNumber = dto.RoomNumber,
+                RoomDetailDescription = dto.RoomDetailDescription,
+                RoomPricePerDay = dto.RoomPricePerDay,
+                RoomTypeId = dto.RoomTypeId,
+                RoomMaxCapacity = dto.RoomMaxCapacity,
+                RoomStatus = dto.RoomStatus
+            };
+        }
+        public static RoomInformationDTO MapRoomDTO(RoomInformation entity)
+        {
+            return new RoomInformationDTO
+            {
+                RoomId = entity.RoomId,
+                RoomNumber = entity.RoomNumber,
+                RoomDetailDescription = entity.RoomDetailDescription,
+                RoomPricePerDay = entity.RoomPricePerDay,
+                RoomTypeId = entity.RoomTypeId,
+                RoomMaxCapacity = entity.RoomMaxCapacity,
+                RoomStatus = entity.RoomStatus
+            };
         }
 
         public static RoomTypeDTO MappRoomTypeDTO(RoomType roomType)
@@ -66,7 +81,7 @@ namespace Repository.Helper
             roomTypeDTO.RoomTypeName = roomType.RoomTypeName;
             roomTypeDTO.RoomTypeId = roomType.RoomTypeId;
             roomTypeDTO.TypeNote = roomType.TypeNote;
-            roomTypeDTO.TypeDescription = roomType.TypeDescription; 
+            roomTypeDTO.TypeDescription = roomType.TypeDescription;
             return roomTypeDTO;
         }
 
@@ -80,6 +95,6 @@ namespace Repository.Helper
             return roomType;
         }
 
-      
+
     }
 }

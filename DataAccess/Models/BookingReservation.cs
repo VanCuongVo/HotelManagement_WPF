@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace DataAccess.Models;
@@ -9,7 +9,7 @@ public partial class BookingReservation
 
     public DateTime? BookingDate { get; set; }
 
-    public decimal? TotalPrice { get; set; }
+    public double? TotalPrice { get; set; }
 
     public int CustomerId { get; set; }
 

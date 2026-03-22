@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
@@ -63,7 +63,7 @@ public partial class PRN212DbContext : DbContext
 
             entity.Property(e => e.BookingReservationId).HasColumnName("BookingReservationID");
             entity.Property(e => e.RoomId).HasColumnName("RoomID");
-            entity.Property(e => e.ActualPrice).HasColumnType("money");
+            entity.Property(e => e.ActualPrice).HasColumnType("float");
 
             entity.HasOne(d => d.BookingReservation).WithMany(p => p.BookingDetails)
                 .HasForeignKey(d => d.BookingReservationId)
@@ -82,7 +82,7 @@ public partial class PRN212DbContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("BookingReservationID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.TotalPrice).HasColumnType("money");
+            entity.Property(e => e.TotalPrice).HasColumnType("float");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.BookingReservations)
                 .HasForeignKey(d => d.CustomerId)
@@ -125,7 +125,7 @@ public partial class PRN212DbContext : DbContext
             entity.Property(e => e.RoomId).HasColumnName("RoomID");
             entity.Property(e => e.RoomDetailDescription).HasMaxLength(220);
             entity.Property(e => e.RoomNumber).HasMaxLength(50);
-            entity.Property(e => e.RoomPricePerDay).HasColumnType("money");
+            entity.Property(e => e.RoomPricePerDay).HasColumnType("float");
             entity.Property(e => e.RoomTypeId).HasColumnName("RoomTypeID");
 
             entity.HasOne(d => d.RoomType).WithMany(p => p.RoomInformations)

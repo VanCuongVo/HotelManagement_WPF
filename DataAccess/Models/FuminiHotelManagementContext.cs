@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -90,7 +90,7 @@ public partial class FuminiHotelManagementContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("BookingReservationID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.TotalPrice).HasColumnType("money");
+            entity.Property(e => e.TotalPrice).HasColumnType("float");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.BookingReservations)
                 .HasForeignKey(d => d.CustomerId)
@@ -133,7 +133,7 @@ public partial class FuminiHotelManagementContext : DbContext
             entity.Property(e => e.RoomId).HasColumnName("RoomID");
             entity.Property(e => e.RoomDetailDescription).HasMaxLength(220);
             entity.Property(e => e.RoomNumber).HasMaxLength(50);
-            entity.Property(e => e.RoomPricePerDay).HasColumnType("money");
+            entity.Property(e => e.RoomPricePerDay).HasColumnType("float");
             entity.Property(e => e.RoomTypeId).HasColumnName("RoomTypeID");
 
             entity.HasOne(d => d.RoomType).WithMany(p => p.RoomInformations)

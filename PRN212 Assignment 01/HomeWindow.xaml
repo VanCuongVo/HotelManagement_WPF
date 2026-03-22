@@ -1,4 +1,4 @@
-﻿<Window x:Class="PRN212_Assignment_01.HomeWindow"
+<Window x:Class="PRN212_Assignment_01.HomeWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Chambres" Height="650" Width="1000"
@@ -10,6 +10,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <!-- Header -->
         <Border Grid.Row="0" Background="#1976D2">
             <Grid Margin="20,0">
                 <Grid.ColumnDefinitions>
@@ -24,55 +25,66 @@
             </Grid>
         </Border>
 
+        <!-- Body -->
         <TabControl Grid.Row="1" Margin="10">
-            <!-- HOTEL MANAGEMENT TAB -->
-            <TabItem Header="Hotel Management">
+
+            <!-- Room Information Management -->
+            <TabItem Header="Room Information Management">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="350"/>
+                        <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <StackPanel Grid.Column="0" Margin="0,0,20,0">
-                        <TextBlock Text="Hotel Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Room Information" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                            <TextBox x:Name="txtSearchHotelId" Width="100" Margin="0,0,10,0"/>
-                            <TextBox x:Name="txtSearchHotelName" Width="150" Margin="0,0,10,0"/>
-                            <Button Content="Search" Width="80" Background="#1976D2" Foreground="White"/>
+                            <Label Content="Number"/>
+                            <TextBox x:Name="txtSearchRoomNumber" Width="58" Margin="0,0,10,0"/>
+                            <Label Content="Status"/>
+                            <TextBox x:Name="txtSearchRoomStatus" Width="70" Margin="0,0,10,0"/>
+                            <Button Content="Search" Width="75" Background="#1976D2" Foreground="White" Click="Button_SearchRoomInfor"/>
                         </StackPanel>
 
-                        <TextBlock Text="Hotel ID" Visibility="Collapsed"/>
-                        <TextBox x:Name="txtHotelId" Visibility="Collapsed" Margin="0,4"/>
+                        <TextBox x:Name="txtRoomId" Visibility="Collapsed"/>
+                        <Label Content="Room Number"/>
+                        <TextBox x:Name="txtRoomNumber" Margin="0,4"/>
+                        <Label Content="Description"/>
+                        <TextBox x:Name="txtRoomDescription" Margin="0,4"/>
+                        <Label Content="Max Capacity"/>
+                        <TextBox x:Name="txtRoomMaxCapacity" Margin="0,4"/>
+                        <Label Content="RomeTypeId"/>
+                        <TextBox x:Name="txtRoomTypeIdInfor" Margin="0,4"/>
+                        <Label Content="Status"/>
+                        <TextBox x:Name="txtRoomStatus" Margin="0,4"/>
+                        <Label Content="Price"/>
+                        <TextBox x:Name="txtPrice" Margin="0,4"/>
 
-                        <TextBlock Text="Hotel Name"/>
-                        <TextBox x:Name="txtHotelName" Margin="0,4"/>
-
-                        <TextBlock Text="Hotel Address"/>
-                        <TextBox x:Name="txtHotelAddress" Margin="0,4"/>
-
-                        <TextBlock Text="Hotel Rating (1-5)"/>
-                        <TextBox x:Name="txtHotelRating" Margin="0,4"/>
-
-                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340">
-                            <Button x:Name="btnAddHotel" Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White"/>
-                            <Button x:Name="btnUpdateHotel" Content="Update" Width="75" Margin="5" Background="#FFC107"/>
-                            <Button x:Name="btnDeleteHotel" Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White"/>
-                            <Button Content="Clear" Width="75" Margin="5"/>
+                        <WrapPanel>
+                            <Button Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White" Click="Button_AddRoomInfor"/>
+                            <Button Content="Update" Width="75" Margin="5" Background="#FFC107" Click="Button_UpdateRoomInfor"/>
+                            <Button Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White" Click="Button_DeleteRoomInfor"/>
+                            <Button Content="Clear" Width="75" Margin="5" Background="#9E9E9E" Foreground="White" Click="Button_ClearRoomInfor"/>
                         </WrapPanel>
                     </StackPanel>
 
-                    <DataGrid x:Name="dgHotels" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid x:Name="dgRoom_Information" Grid.Column="2" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgRoomInformation_SelectionChanged">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
-                            <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
-                            <DataGridTextColumn Header="Rating" Binding="{Binding Rating}" Width="*"/>
+                            <DataGridTextColumn Header="ID" Binding="{Binding RoomId}" Width="*"/>
+                            <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" Width="*"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding RoomDetailDescription}" Width="*"/>
+                            <DataGridTextColumn Header="Max Capacity" Binding="{Binding RoomMaxCapacity}" Width="*"/>
+                            <DataGridTextColumn Header="TypeId" Binding="{Binding RoomTypeId}" Width="*"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding RoomStatus}" Width="*"/>
+                            <DataGridTextColumn Header="Price" Binding="{Binding RoomPricePerDay}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
             </TabItem>
 
-            <!-- CUSTOMER MANAGEMENT TAB -->
+            <!-- Customer Management -->
             <TabItem Header="Customer Management">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
@@ -82,31 +94,38 @@
 
                     <StackPanel Grid.Column="0" Margin="0,0,20,0">
                         <TextBlock Text="Customer Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                        <!-- Search Section -->
+                        <TextBlock Text="Search Customer" FontWeight="SemiBold" Margin="0,0,0,5"/>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                            <TextBox x:Name="txtSearchCustomerId" Width="100" Margin="0,0,10,0"/>
-                            <TextBox x:Name="txtSearchCustomerName" Width="134" Margin="0,0,10,0" Height="18"/>
-                            <Button Content="Search" Width="71" Background="#1976D2" Foreground="White" Click="Button_Click_2"/>
+                            <StackPanel>
+                                <TextBlock Text="Customer ID"/>
+                                <TextBox x:Name="txtSearchCustomerId" Width="100" Margin="0,0,10,0"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock Text="Customer Name"/>
+                                <TextBox x:Name="txtSearchCustomerName" Width="134" Margin="0,0,10,0" Height="18"/>
+                            </StackPanel>
+                            <Button Content="Search" Width="71" Background="#1976D2" Foreground="White" Click="Button_Click_2" VerticalAlignment="Bottom"/>
                         </StackPanel>
 
+                        <Separator Margin="0,5"/>
+
+                        <!-- Form Section -->
                         <TextBlock Text="Customer ID" Visibility="Collapsed"/>
                         <TextBox x:Name="txtCustomerId" Margin="0,4" Visibility="Collapsed"/>
-
                         <TextBlock Text="Customer Name"/>
                         <TextBox x:Name="txtCustomerName" Margin="0,4"/>
-
                         <TextBlock Text="Email"/>
                         <TextBox x:Name="txtCustomerEmail" Margin="0,4"/>
-
                         <TextBlock Text="Phone"/>
                         <TextBox x:Name="txtCustomerPhone" Margin="0,4"/>
-
                         <TextBlock Text="Date of Birth"/>
                         <DatePicker x:Name="dpDOB" Margin="0,4"/>
-
                         <TextBlock Text="Status"/>
                         <TextBox x:Name="txtCustomerstatus" Margin="0,4"/>
 
-                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340">
+                        <WrapPanel Margin="0,10" HorizontalAlignment="Left" Width="340" Height="36">
                             <Button Content="Add" Width="75" Margin="5" Background="#4CAF50" Foreground="White" Click="btnAdd_Click"/>
                             <Button Content="Update" Width="75" Margin="5" Background="#FFC107" Click="btnUpdate_Click"/>
                             <Button Content="Delete" Width="75" Margin="5" Background="#F44336" Foreground="White" Click="btnDelete_Click"/>
@@ -127,7 +146,7 @@
                 </Grid>
             </TabItem>
 
-            <!-- ROOM TYPE MANAGEMENT TAB -->
+            <!-- Room Type Management -->
             <TabItem Header="Room Type Management">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
@@ -137,12 +156,24 @@
 
                     <StackPanel Grid.Column="0" Margin="0,0,20,0">
                         <TextBlock Text="Room Type Info" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                        <!-- Phần Search -->
+                        <TextBlock Text="Search Room Type" FontWeight="SemiBold" Margin="0,0,0,5"/>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                            <TextBox x:Name="txtSearchRoomTypeId" Width="100" Margin="0,0,10,0"/>
-                            <TextBox x:Name="txtSearchRoomTypeName" Width="150" Margin="0,0,10,0"/>
-                            <Button Content="Search" Width="80" Background="#1976D2" Foreground="White" Click="Button_SearchRoom"/>
+                            <StackPanel>
+                                <TextBlock Text="Room Type ID"/>
+                                <TextBox x:Name="txtSearchRoomTypeId" Width="100" Margin="0,0,10,0"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock Text="Room Type Name"/>
+                                <TextBox x:Name="txtSearchRoomTypeName" Width="150" Margin="0,0,10,0"/>
+                            </StackPanel>
+                            <Button Content="Search" Width="60" Background="#1976D2" Foreground="White" Click="Button_SearchRoom" VerticalAlignment="Bottom"/>
                         </StackPanel>
 
+                        <Separator Margin="0,5"/>
+
+                        <!-- Phần nhập liệu -->
                         <TextBlock Text="Room Type ID" Visibility="Collapsed"/>
                         <TextBox x:Name="txtRoomTypeId" Margin="0,4" Visibility="Collapsed"/>
 
@@ -163,6 +194,7 @@
                         </WrapPanel>
                     </StackPanel>
 
+                    <!-- DataGrid -->
                     <DataGrid x:Name="dgRoomTypes" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgRoomTypes_SelectionChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding RoomTypeId}" Width="*"/>
@@ -174,7 +206,7 @@
                 </Grid>
             </TabItem>
 
-            <!-- BOOKING REPORT TAB -->
+            <!-- Booking Report -->
             <TabItem Header="Booking Report">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>

@@ -1,6 +1,13 @@
-﻿using Service.UserService;
+using Service.UserService;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using Service.UserService;
 
 namespace PRN212_Assignment_01
 {
@@ -59,7 +66,7 @@ namespace PRN212_Assignment_01
                 }
                 else
                 {
-                    MessageBox.Show("Register failed! Please Fill out Information", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Register failed! Please Fill Out Your Information", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
 

@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\vovan\Downloads\PRN212-Assignment-01\PRN212 Assignment 01\obj\Release\net8.0-windows\
+=======
+C:\Users\vovan\Downloads\PRN212 Assignment 01\PRN212 Assignment 01\PRN212 Assignment 01\obj\Release\net8.0-windows\
+>>>>>>> origin/main
 PRN212_Assignment_01
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\vovan\Downloads\PRN212-Assignment-01\PRN212 Assignment 01\App.xaml
 42097896532
 
 7-113895899
 247-402908680
 HomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;
+=======
+C:\Users\vovan\Downloads\PRN212 Assignment 01\PRN212 Assignment 01\PRN212 Assignment 01\App.xaml
+5544882915
+
+8649029389
+247745180301
+CustomerHomeWindow.xaml;HomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;
+>>>>>>> origin/main
 
 True
 

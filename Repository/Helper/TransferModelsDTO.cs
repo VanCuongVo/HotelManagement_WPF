@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -94,7 +94,6 @@ namespace Repository.Helper
             roomType.TypeNote = roomTypeDTO.TypeNote;
             return roomType;
         }
-
 
     }
 }

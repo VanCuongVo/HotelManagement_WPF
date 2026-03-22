@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Service.UserService;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Service.UserService;
 
 namespace PRN212_Assignment_01
 {
@@ -28,8 +17,8 @@ namespace PRN212_Assignment_01
         private void LnkLogin_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow login = new LoginWindow();
-            login.Show();     
-            this.Hide();      
+            login.Show();
+            this.Hide();
         }
 
         private void Button_Register_Click(object sender, RoutedEventArgs e)
@@ -57,7 +46,7 @@ namespace PRN212_Assignment_01
                     Password = password,
                     CustomerBirthday = birthDate,
                     CustomerStatus = status,
-                    RoleId = 1 
+                    RoleId = 1
                 };
                 bool result = accountService.AddCustomer(customer);
 
@@ -76,6 +65,6 @@ namespace PRN212_Assignment_01
 
         }
 
-       
+
     }
 }

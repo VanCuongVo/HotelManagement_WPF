@@ -14,3 +14,19 @@ D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\refint
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 D:\Summer2025\PRN212\ASM\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\bin\Debug\net8.0\appsettings.json
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\PRN212\Lab_Assignment_PRN212\PRN212 Assignment 01\PRN212 Assignment 01\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
